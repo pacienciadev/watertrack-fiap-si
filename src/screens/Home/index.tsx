@@ -2,6 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 
 import waterTracklogo from "../../assets/images/WaterTracklogo.svg";
 import welcomeBkg from "../../assets/images/welcome-bkg.png";
+import { NavLink } from "react-router-dom";
 
 export function Home() {
   return (
@@ -78,15 +79,19 @@ export function Home() {
         </Box>
 
         <Box mt={4} px={"32px"}>
-          <Button fullWidth variant="outlined">
-            <span style={{ color: "white" }}>Entre com seu Email</span>
-          </Button>
+          <NavLink to="/login">
+            <Button fullWidth variant="outlined">
+              <span style={{ color: "white" }}>Entre com seu Email</span>
+            </Button>
+          </NavLink>
         </Box>
-        
+
         <Box mt={3} px={"32px"}>
-          <Button fullWidth variant="outlined">
-            <span style={{ color: "white" }}>Cadastre seu Email.</span>
-          </Button>
+          <NavLink to="/register">
+            <Button fullWidth variant="outlined">
+              <span style={{ color: "white" }}>Cadastre seu Email.</span>
+            </Button>
+          </NavLink>
         </Box>
       </Box>
     </>

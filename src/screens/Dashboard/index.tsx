@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import HorizontalCard from "../../components/Cards/Horizontal";
 import { MainLayout } from "../../components/Layouts/MainLayout";
 import clima_vector from "../../assets/images/clima-vector.png";

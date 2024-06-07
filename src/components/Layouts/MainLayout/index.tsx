@@ -1,29 +1,29 @@
-import * as React from 'react'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
-import IconButton from '@mui/material/IconButton'
-import MenuItem from '@mui/material/MenuItem'
-import Menu from '@mui/material/Menu'
-import { IoMenuSharp } from 'react-icons/io5'
-import { MdAccountCircle } from 'react-icons/md'
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import { IoMenuSharp } from "react-icons/io5";
+import { MdAccountCircle } from "react-icons/md";
 
 export type MainLayoutProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export function MainLayout({ children }: MainLayoutProps) {
-  const [auth, setAuth] = React.useState(true)
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
+  const [auth, setAuth] = React.useState(true);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget)
-  }
+    setAnchorEl(event.currentTarget);
+  };
 
   const handleClose = () => {
-    setAnchorEl(null)
-  }
+    setAnchorEl(null);
+  };
 
   return (
     <>
@@ -43,7 +43,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               WATERTRACK
             </Typography>
-            
+
             {auth && (
               <div>
                 <IconButton
@@ -60,13 +60,13 @@ export function MainLayout({ children }: MainLayoutProps) {
                   id="menu-appbar"
                   anchorEl={anchorEl}
                   anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
+                    vertical: "top",
+                    horizontal: "right",
                   }}
                   keepMounted
                   transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
+                    vertical: "top",
+                    horizontal: "right",
                   }}
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
@@ -82,5 +82,5 @@ export function MainLayout({ children }: MainLayoutProps) {
 
       <Box>{children}</Box>
     </>
-  )
+  );
 }

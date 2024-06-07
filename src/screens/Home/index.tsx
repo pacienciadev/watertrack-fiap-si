@@ -1,37 +1,94 @@
-import { Box, Grid } from '@mui/material'
-import HorizontalCard from '../../components/Cards/Horizontal'
-import { MainLayout } from '../../components/Layouts/MainLayout'
-import clima_vector from '../../assets/images/clima-vector.png';
-import marc_vector from '../../assets/images/marc-vetor.png';
-import precip_vector from '../../assets/images/precip-vetor.png';
-import temp_vector from '../../assets/images/previ-vetor.png';
+import { Box, Button, Typography } from "@mui/material";
+
+import waterTracklogo from "../../assets/images/WaterTracklogo.svg";
+import welcomeBkg from "../../assets/images/welcome-bkg.png";
 
 export function Home() {
-
-  const cards = [
-    { title: 'Clima', image: clima_vector },
-    { title: 'Maré', image: marc_vector },
-    { title: 'Precipitação', image: precip_vector },
-    { title: 'Temperatura', image: temp_vector },
-  ]
-
   return (
-    <MainLayout>
-      <Box display="flex" flexDirection="column">
-        <h3>Praia & Zona Costeira</h3>
-        <p>Online</p>
+    <>
+      <Box
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: `center`,
+          backgroundImage: `url(${welcomeBkg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#00000090",
+          backgroundBlendMode: "multiply",
+          minHeight: "100vh",
+        }}
+      >
+        <Box px={"26px"}>
+          <Typography
+            variant="h1"
+            fontSize={22}
+            fontWeight={400}
+            color="white"
+            ml={1}
+          >
+            BEM-VINDO AO
+          </Typography>
+
+          <Box>
+            <img src={waterTracklogo} alt="Logo" style={{ width: "100%" }} />
+          </Box>
+        </Box>
+
+        <Box px={"32px"} mt="76px">
+          <Typography
+            variant="subtitle1"
+            color="white"
+            fontSize={18}
+            sx={{ maxWidth: "204px", lineHeight: "24px" }}
+          >
+            Cultivando um oceano sustentável para todos.
+          </Typography>
+        </Box>
+
+        <Box display="flex" justifyContent="center" px={"32px"} pt={4}>
+          <Typography
+            variant="overline"
+            color="white"
+            sx={{
+              display: "flex",
+              lineHeight: "24px",
+              gap: "12px",
+
+              "::before": {
+                content: '""',
+                display: "block",
+                width: "44px",
+                height: "1px",
+                backgroundColor: "white",
+                marginTop: "10px",
+              },
+
+              "::after": {
+                content: '""',
+                display: "block",
+                width: "44px",
+                height: "1px",
+                backgroundColor: "white",
+                marginTop: "10px",
+              },
+            }}
+          >
+            comece aqui
+          </Typography>
+        </Box>
+
+        <Box mt={4} px={"32px"}>
+          <Button fullWidth variant="outlined">
+            <span style={{ color: "white" }}>Entre com seu Email</span>
+          </Button>
+        </Box>
+        
+        <Box mt={3} px={"32px"}>
+          <Button fullWidth variant="outlined">
+            <span style={{ color: "white" }}>Cadastre seu Email.</span>
+          </Button>
+        </Box>
       </Box>
-      <Box style={{ display: 'flex', width: '100%', alignItems: 'center', margin: '20px' }}>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, m: 3 }}>
-          {
-            cards.map((card, index) => (
-              <Grid item xs={6} sm={3} key={index}>
-                <HorizontalCard title={card.title} image={card.image} />
-              </Grid>
-            ))
-          }
-        </Grid>
-      </Box>
-    </MainLayout>
-  )
+    </>
+  );
 }

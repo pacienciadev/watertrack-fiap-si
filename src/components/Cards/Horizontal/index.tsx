@@ -7,6 +7,7 @@ import { Avatar, Button, Chip, IconButton } from '@mui/material'
 import { IoIosHeartEmpty, IoMdPin } from 'react-icons/io'
 import { FaStar } from 'react-icons/fa'
 import { FaRegSquarePlus } from 'react-icons/fa6'
+import React from 'react'
 
 export type HorizontalCardProps = {
   title: string

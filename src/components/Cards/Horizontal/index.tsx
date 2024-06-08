@@ -1,7 +1,13 @@
-import { useTheme } from "@mui/material/styles";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import { useTheme } from '@mui/material/styles'
+import Box from '@mui/material/Box'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import Typography from '@mui/material/Typography'
+import { Avatar, Button, Chip, IconButton } from '@mui/material'
+import { IoIosHeartEmpty, IoMdPin } from 'react-icons/io'
+import { FaStar } from 'react-icons/fa'
+import { FaRegSquarePlus } from 'react-icons/fa6'
+import React from 'react'
 
 export type HorizontalCardProps = {
   title: string;

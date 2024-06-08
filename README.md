@@ -30,7 +30,9 @@ O Sistema WaterTrack utiliza uma arquitetura de microsserviços (MSA) para garan
 ### Diagramas de Fluxo Funcional
 - Diagrama de Fluxo Funcional Transversal do Processo "Registrar Local Poluído":
 
+
     <img src="https://i.postimg.cc/g2j580RL/img1.png" alt="Diagrama de Fluxo Funcional Transversal do Processo Registrar Local Poluído" width="400"/>
+
 
 - Processo "Registrar Dados de Análise da Água":
 

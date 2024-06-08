@@ -10,110 +10,32 @@ import { FaRegSquarePlus } from 'react-icons/fa6'
 import React from 'react'
 
 export type HorizontalCardProps = {
-  title: string
-  category: string
-  description: string
-  image: string
-  distance: string
-  score: string
-}
+  title: string;
+  image: string;
+};
 
-export default function HorizontalCard({
-  title,
-  category,
-  description,
-  image,
-  distance,
-  score,
-}: HorizontalCardProps) {
-  const theme = useTheme()
+export default function HorizontalCard({ title, image }: HorizontalCardProps) {
+  const theme = useTheme();
 
   return (
-    <Box display="flex" gap={1}>
-      <Avatar
-        alt={title}
-        src={image}
-        variant="rounded"
-        sx={{ width: 56, height: 56 }}
-      />
-
-      <Card sx={{ display: 'flex', flex: 1 }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
-          <CardContent sx={{ flex: '1 0 auto' }}>
-            <Box
-              mb={1}
-              display="flex"
-              gap={1}
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Chip label={category} size="small" />
-
-              <IconButton
-                aria-label="add to favorite"
-                size="small"
-                sx={{ pt: 1 }}
-              >
-                <IoIosHeartEmpty />
-              </IconButton>
-            </Box>
-
-            <Typography component="div" variant="h6">
-              {title}
-            </Typography>
-
-            <Typography
-              variant="subtitle2"
-              color="text.secondary"
-              component="div"
-            >
-              {description}
-            </Typography>
-
-            <Box
-              display="flex"
-              justifyContent="space-between"
-              mt={1}
-              alignItems="center"
-            >
-              <Box display="flex" gap={1}>
-                <Chip
-                  icon={
-                    <Box mt={0.25} pl={0.25}>
-                      <IoMdPin size={14} />
-                    </Box>
-                  }
-                  label={distance + ' km'}
-                  size="small"
-                  variant="outlined"
-                />
-
-                <Chip
-                  icon={
-                    <Box mt={0.25} pl={0.25}>
-                      <FaStar size={14} />
-                    </Box>
-                  }
-                  label={score}
-                  size="small"
-                  variant="outlined"
-                />
-              </Box>
-
-              <Box>
-                <Button
-                  variant="text"
-                  size="small"
-                  endIcon={<FaRegSquarePlus />}
-                  sx={{ alignItems: 'start', lineHeight: 1.55 }}
-                >
-                  Detalhes
-                </Button>
-              </Box>
-            </Box>
-          </CardContent>
-        </Box>
-      </Card>
-    </Box>
-  )
+    <Card sx={{ width: "156px", height: "207px" }}>
+      <CardContent
+        sx={{
+          flex: "1 0 auto",
+          alignContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <img
+          src={image}
+          alt="Imagem"
+          style={{ height: "80px", margin: "20px 0 20px 0" }}
+        />
+        <Typography variant="h6" color={"#4C7B00"}>
+          {title}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
 }

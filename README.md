@@ -52,13 +52,13 @@ Certifique-se de ter o Node.js e o npm instalados em seu sistema.
 1. **Clone este repositório para o seu sistema local:**
 
     ```bash
-    git clone https://github.com/seu-usuario/skateshop.git
+    git clone https://github.com/SEU_USUARIO/watertrack-fiap-si.git
     ```
 
 2. **Navegue até o diretório do projeto:**
 
     ```bash
-    cd skateshop
+    cd watertrack-fiap-si
     ```
 
 3. **Instale as dependências do projeto:**

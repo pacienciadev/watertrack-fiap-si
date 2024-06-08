@@ -31,12 +31,12 @@ O Sistema WaterTrack utiliza uma arquitetura de microsserviços (MSA) para garan
 - Diagrama de Fluxo Funcional Transversal do Processo "Registrar Local Poluído":
 
 
-    <img src="https://i.postimg.cc/g2j580RL/img1.png" alt="Diagrama de Fluxo Funcional Transversal do Processo Registrar Local Poluído" width="400"/>
+    <img src="https://i.postimg.cc/g2j580RL/img1.png" alt="Diagrama de Fluxo Funcional Transversal do Processo Registrar Local Poluído" />
 
 
 - Processo "Registrar Dados de Análise da Água":
 
-    <img src="https://i.postimg.cc/cCj3zT9S/img2.png" alt="Processo Registrar Dados de Análise da Água" width="400"/>
+    <img src="https://i.postimg.cc/cCj3zT9S/img2.png" alt="Processo Registrar Dados de Análise da Água" />
 
 ## Prototipação Não Funcional
 Detalha os aspectos da interface e experiência do usuário, bem como outros aspectos técnicos e estruturais essenciais para a implementação e operação do sistema.
@@ -52,7 +52,7 @@ Certifique-se de ter o Node.js e o npm instalados em seu sistema.
 1. **Clone este repositório para o seu sistema local:**
 
     ```bash
-    git clone https://github.com/SEU_USUARIO/watertrack-fiap-si.git
+    git clone https://github.com/pacienciadev/watertrack-fiap-si.git
     ```
 
 2. **Navegue até o diretório do projeto:**

@@ -2,13 +2,14 @@ import { Box, Button, Typography } from "@mui/material";
 
 import waterTracklogo from "../../assets/images/WaterTracklogo.svg";
 import welcomeBkg from "../../assets/images/welcome-bkg.png";
+
 import { NavLink } from "react-router-dom";
 
 export function Home() {
   return (
     <>
       <Box
-        style={{
+        sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: `center`,
@@ -19,7 +20,7 @@ export function Home() {
           minHeight: "100vh",
         }}
       >
-        <Box px={"26px"}>
+        <Box px="26px">
           <Typography
             variant="h1"
             fontSize={22}
@@ -35,7 +36,7 @@ export function Home() {
           </Box>
         </Box>
 
-        <Box px={"32px"} mt="76px">
+        <Box px="32px" mt="76px">
           <Typography
             variant="subtitle1"
             color="white"
@@ -46,7 +47,7 @@ export function Home() {
           </Typography>
         </Box>
 
-        <Box display="flex" justifyContent="center" px={"32px"} pt={4}>
+        <Box display="flex" justifyContent="center" px="32px" pt={4}>
           <Typography
             variant="overline"
             color="white"
@@ -78,7 +79,7 @@ export function Home() {
           </Typography>
         </Box>
 
-        <Box mt={4} px={"32px"}>
+        <Box mt={4} px="32px">
           <NavLink to="/login">
             <Button fullWidth variant="outlined">
               <span style={{ color: "white" }}>Entre com seu Email</span>
@@ -86,7 +87,7 @@ export function Home() {
           </NavLink>
         </Box>
 
-        <Box mt={3} px={"32px"}>
+        <Box mt={3} px="32px">
           <NavLink to="/register">
             <Button fullWidth variant="outlined">
               <span style={{ color: "white" }}>Cadastre seu Email.</span>

@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 
 import { NavLink } from "react-router-dom";
 
-import waterTrackVerticallogo from "../../../assets/images/WaterTrackVerticalLogo.png";
+import waterTrackVerticallogo from "../../../assets/images/WaterTrackVerticalLogo.svg";
 
 export function Login() {
   return (

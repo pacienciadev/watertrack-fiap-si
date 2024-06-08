@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 
 import { NavLink } from "react-router-dom";
 
-import waterTrackVerticallogo from "../../../assets/images/WaterTrackVerticalLogo.png";
+import waterTrackVerticallogo from "../../../assets/images/WaterTrackVerticalLogo.svg";
 
 export function Register() {
   return (
@@ -53,7 +53,7 @@ export function Register() {
           />
         </Box>
 
-        <Box mt={4} px={"64px"} width="100%">
+        <Box mt={4} px="64px" width="100%">
           <NavLink to="/dashboard">
             <Button fullWidth variant="contained">
               <span style={{ color: "white" }}>CADASTRAR</span>
@@ -63,7 +63,7 @@ export function Register() {
 
         <Box mt={4}>
           <Typography variant="subtitle2">
-          Já possuí um cadastro? Faça seu {" "}
+            Já possuí um cadastro? Faça seu {" "}
             <NavLink to={"/login"}>login aqui</NavLink>.
           </Typography>
         </Box>

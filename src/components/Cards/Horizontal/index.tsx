@@ -12,7 +12,7 @@ export default function HorizontalCard({ title, image }: HorizontalCardProps) {
   const theme = useTheme();
 
   return (
-    <Card sx={{ width: "160px", height: "207px" }}>
+    <Card sx={{ width: "156px", height: "207px" }}>
       <CardContent
         sx={{
           flex: "1 0 auto",

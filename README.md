@@ -86,4 +86,15 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 
 ---
 
-Desenvolvido por alunos do 3º ano de Sistemas de Informação da FIAP.
+- Filipe Braga Da Silva Rosa - RM92099
+  - [filipealves2621@gmail.com](mailto:filipealves2621@gmail.com)
+
+- Rafael Eduardo Drabuntas Paciência - RM93584
+  - [rafapaci@gmail.com](mailto:rafapaci@gmail.com)
+
+- Raul Costa da Silva Pereira - RM93056
+  - [rcspereira@hotmail.com](mailto:rcspereira@hotmail.com)
+
+- Richard Gonçalves de Souza Silva - RM94099
+  - [richard.accont@gmail.com](mailto:richard.accont@gmail.com)
+
